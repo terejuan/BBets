@@ -65,8 +65,20 @@ With BrownLow hiring 40 substitute teachers and doing this bet 637 times we can 
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
+```{r}
+odds40 <- vector("numeric")
+for(i in 1: 1000){
+  odds40[i] <- BrLw(odds = 4.3868)
+}
+                  
+favstats(odds40)
+lcl <- mean(odds40 - 2*sd(odds40))
+ucl <- mean(odds40 + 2*sd(odds40))
+options(digits = 1)
+print(paste(lcl, ucl))
+```
 
-
+0n an average BrownLow bet are 4.3868 while runing it to 1000, returning us a result of almost 0. making it a fair bet because he isn't earning any money. The mean `r mean(odds40)` where the lower amount made is `r lcl` the highest amount made which is `r ucl`. It doesn't change much if you run it 40 or a 100 times you will get a different answer but we will always get almost the same results.
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
