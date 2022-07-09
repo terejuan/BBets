@@ -84,8 +84,21 @@ print(paste(lcl, ucl))
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+class40 <- vector("numeric")
+for(i in 1: 1000){
+  class40[i] <- BrLw(numClass = 28)
+}
+
+favstats(class40)
+lcl <- mean(class40 - 2*sd(class40))
+ucl <- mean(class40 + 2*sd(class40))
+options(digits = 1)
+print(paste(lcl, ucl))
+```
 
 
+The size of class BrownLow should have to make this a fair bet is 28. When runing the data it almost gave us the average results closest to zero profits. The mean `r mean(class40)` where the lower amount made is `r lcl` the highest amount made which is `r ucl`.
 
 
 
