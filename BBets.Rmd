@@ -58,7 +58,7 @@ print(paste(lcl, ucl))
 ```
 
 The lower end is `r lcl` the upper end which is `r ucl`.
-With BrownLow hiring40 substitute teachr and doing this bet 637 times we can see that  BrownLow is making an average of 225 to 350 dollar. That makes 95% confidence interval on how much money he is making, it seems to me that he is making allot of money all the time, making this bet unfair.
+With BrownLow hiring 40 substitute teachers and doing this bet 637 times we can see that BrownLow is making an average of 225 to 350 dollar. That makes 95% confidence interval on how much money he is making, it seems to me that he is making allot of money all the time, making this bet unfair.
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
