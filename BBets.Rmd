@@ -100,11 +100,9 @@ print(paste(lcl, ucl))
 
 The size of class BrownLow should have to make this a fair bet is 28. When runing the data it almost gave us the average results closest to zero profits. The mean `r mean(class40)` where the lower amount made is `r lcl` the highest amount made which is `r ucl`.
 
-
-
-
-
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
+In conclusion as we worked trough this problem, we had to make an array of numbers to find how much money BrownLow was making to match the 95% confidence interval. With the 40 substitute teacher the average amount of money BrownLow has made estimating from the sample of 40 he was making money all the time, From an average of 225 to 350 dollar each time he would bet. In order for us to make this a fare bet where he makes an earning of 0 we manipulated the odds to make him earn as little or closes to 0. 0n an average BrownLow bet are 4.3868 while runing it to 1000, returning us a result of almost 0. making it a fair bet because he isn't earning any money. After we manipulated the odds we looked at the class size if by changing the class size we could make him play a fair bet. Instead of doing it with 35 students we ran it down to 28 students this gave us a result average close to 0.
 
